@@ -1,0 +1,10 @@
+# get ips and names for local network
+
+function ips {
+  ip n |
+  awk '/^[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+.*$/ { print $1 }' |
+  nslookup |
+  awk '/^[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+.*$/ { split($1, ipReverseArr, "."); printf "%s.%s.%s.%s", ipReverseArr[4], ipReverseArr[3], ipReverseArr[2], ipReverseArr[1]; print "\t➜ \t" $4 }'
+}
+
+# ip n | awk '/^[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+.*$/ { print $1 }' | nslookup | awk '/^[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+.*$/ { split($1, ipReverseArr, \".\"); printf \"%s.%s.%s.%s\", ipReverseArr[4], ipReverseArr[3], ipReverseArr[2], ipReverseArr[1]; print \"\t➜ \t\" $4 }'

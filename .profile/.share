@@ -1,0 +1,4 @@
+[[ -s "$HOME/.profile/.exports" ]] && source "$HOME/.profile/.exports"
+[[ -s "$HOME/.profile/.alias" ]] && source "$HOME/.profile/.alias"
+[[ -s "$HOME/.profile/.functions" ]] && source "$HOME/.profile/.functions"
+[[ -s "$HOME/.profile/.bind" ]] && source "$HOME/.profile/.bind"

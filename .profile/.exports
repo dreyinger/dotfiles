@@ -1,0 +1,21 @@
+# PATH RESET
+unset PATH
+
+# SYSTEM
+PATH=/sbin:/bin
+
+# USER
+PATH=/usr/sbin:/usr/bin/:$PATH
+
+# USER LOCAL
+PATH=/usr/local/sbin:/usr/local/bin:$PATH
+
+#-------------------------------------------------#
+
+# node version 9.10.1
+PATH=/usr/local/n/versions/node/9.10.1/bin:$PATH
+
+export PATH=$PATH
+
+# set visual studio code as default editor
+export EDITOR='code'

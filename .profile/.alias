@@ -1,0 +1,13 @@
+alias ..='cd ..'
+alias ...='cd ../..'
+alias ....='cd ../../..'
+alias .....='cd ../../../..'
+alias la='ls -lAFho'
+alias lh='ls -lh'
+alias copypath="pwd|tr -d '\n\r\t'|xclip -i"
+
+# Helper
+alias rld="source $HOME/.profile/.share"
+alias cl="clear"
+alias x="exit"
+#alias ips="ip n | awk '/^[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+.*$/ { print $1 }' | nslookup | awk '/^[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+.*$/ { split($1, ipReverseArr, \".\"); printf \"%s.%s.%s.%s\", ipReverseArr[4], ipReverseArr[3], ipReverseArr[2], ipReverseArr[1]; print \"\t➜ \t\" $4 }'"
